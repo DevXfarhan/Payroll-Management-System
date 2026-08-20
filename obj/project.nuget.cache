@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "GzKM3Aa66Yg=",
+  "success": true,
+  "projectFilePath": "E:\\Sofcom Intern\\Sofcom Project\\Payroll Management System.worktrees\\csharp-payroll-management-system\\Payroll Management System.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tabassum\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Tabassum\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Tabassum\\.nuget\\packages\\mysqlconnector\\2.6.2\\mysqlconnector.2.6.2.nupkg.sha512"
+  ],
+  "logs": []
+}

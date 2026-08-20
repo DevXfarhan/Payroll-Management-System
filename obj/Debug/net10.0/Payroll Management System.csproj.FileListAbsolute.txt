@@ -1,0 +1,20 @@
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\bin\Debug\net10.0\Payroll Management System.exe
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\bin\Debug\net10.0\Payroll Management System.dll
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\bin\Debug\net10.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\bin\Debug\net10.0\MySqlConnector.dll
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\obj\Debug\net10.0\Payroll Management System.csproj.AssemblyReference.cache
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\obj\Debug\net10.0\Payroll Management System.GeneratedMSBuildEditorConfig.editorconfig
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\obj\Debug\net10.0\Payroll Management System.AssemblyInfoInputs.cache
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\obj\Debug\net10.0\Payroll Management System.AssemblyInfo.cs
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\obj\Debug\net10.0\Payroll Management System.csproj.CoreCompileInputs.cache
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\obj\Debug\net10.0\Payroll Management System.sourcelink.json
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\obj\Debug\net10.0\Payroll .7D9B4C3A.Up2Date
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\obj\Debug\net10.0\Payroll Management System.dll
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\obj\Debug\net10.0\refint\Payroll Management System.dll
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\obj\Debug\net10.0\Payroll Management System.pdb
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\bin\Debug\net10.0\Payroll Management System.deps.json
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\bin\Debug\net10.0\Payroll Management System.runtimeconfig.json
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\bin\Debug\net10.0\Payroll Management System.pdb
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\obj\Debug\net10.0\Payroll Management System.genruntimeconfig.cache
+E:\Sofcom Intern\Sofcom Project\Payroll Management System.worktrees\csharp-payroll-management-system\obj\Debug\net10.0\ref\Payroll Management System.dll
