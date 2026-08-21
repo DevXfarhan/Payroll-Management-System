@@ -188,6 +188,7 @@ public class Payroll
                 Console.WriteLine($"Salary calculated and saved for {employee.Name}.");
             }
             else
+            
             {
                 Console.WriteLine("Salary calculation was not saved to database (no rows affected).");
             }
