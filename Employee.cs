@@ -70,7 +70,7 @@ public class Employee
         {
             if (value < 0)
             {
-                throw new ArgumentOutOfRangeException(nameof(value), "Basic salary cannot be negative.");
+                throw new ArgumentOutOfRangeException(nameof(value), "❌ Basic salary cannot be negative.");
             }
 
             basicSalary = value;
