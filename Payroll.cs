@@ -5,8 +5,13 @@ using MySqlConnector;
 
 public class Payroll
 {
+    // list stores employees in memory while application is running.
     private readonly List<Employee> employees;
+
+    // This dictionary stores the salary information for each employee.
     private readonly Dictionary<string, (decimal Allowance, decimal Deduction, decimal NetSalary, bool IsPaid)> salaryRecords;
+
+    // Connection string to connect this C# app to the XAMPP MySQL database.
     private readonly string connectionString = "server=127.0.0.1;port=3306;database=payroll_db;uid=root;pwd=;";
 
     public Payroll()
@@ -16,16 +21,19 @@ public class Payroll
         LoadEmployeesFromDatabase();
     }
 
+    // This property gives access to the employee list from other classes.
     public List<Employee> Employees
     {
         get { return employees; }
     }
 
+    // Creates a new MySqlConnection using the connection string.
     private MySqlConnection GetConnection()
     {
         return new MySqlConnection(connectionString);
     }
 
+    // Reads all employee records from the Employees table in MySQL.
     private void LoadEmployeesFromDatabase()
     {
         try
@@ -57,6 +65,7 @@ public class Payroll
         }
     }
 
+    // Prevents duplicate employee IDs before saving.
     public void AddEmployee(Employee employee)
     {
         if (employee == null)
@@ -97,6 +106,7 @@ public class Payroll
         }
     }
 
+    // Shows all employees currently stored in the List<Employee>.
     public void ViewEmployees()
     {
         if (employees.Count == 0)
@@ -115,6 +125,7 @@ public class Payroll
         }
     }
 
+    // Returns null if the employee is not found.
     public Employee? SearchEmployee(string employeeId)
     {
         if (string.IsNullOrWhiteSpace(employeeId))
@@ -123,11 +134,14 @@ public class Payroll
         return employees.FirstOrDefault(e => e.EmployeeId.Equals(employeeId.Trim(), StringComparison.OrdinalIgnoreCase));
     }
 
+    // Checks whether an employee ID already exists.
     public bool EmployeeExists(string employeeId)
     {
         return SearchEmployee(employeeId) != null;
     }
 
+    // Calculates salary using:
+    // Net Salary = Basic Salary + Allowance - Deduction
     public void CalculateSalary(string employeeId, decimal allowance, decimal deduction)
     {
         var employee = SearchEmployee(employeeId);
@@ -150,6 +164,7 @@ public class Payroll
             return;
         }
 
+        // Save calculation in memory before storing in database for quick access.
         salaryRecords[employee.EmployeeId] = (allowance, deduction, netSalary, false);
 
         try
@@ -183,6 +198,7 @@ public class Payroll
         }
     }
 
+    // Fetches the latest salary record for a specific employee and displays it.
     public void ViewSalary(string employeeId)
     {
         var employee = SearchEmployee(employeeId);
@@ -234,6 +250,7 @@ public class Payroll
         }
     }
 
+    // Marks the latest salary record for an employee as paid.
     public void MarkSalaryAsPaid(string employeeId)
     {
         var employee = SearchEmployee(employeeId);
@@ -248,7 +265,7 @@ public class Payroll
             using var connection = GetConnection();
             connection.Open();
 
-            // find latest SalaryID for this employee
+            // Find the latest salary row for this employee.
             string findQuery = "SELECT SalaryID FROM SalaryRecords WHERE EmployeeID = @EmployeeID ORDER BY SalaryID DESC LIMIT 1";
             using var findCmd = new MySqlCommand(findQuery, connection);
             findCmd.Parameters.AddWithValue("@EmployeeID", employee.EmployeeId);
@@ -262,6 +279,7 @@ public class Payroll
 
             long salaryId = Convert.ToInt64(result);
 
+            // Update the status of that row to Paid.
             string updateQuery = "UPDATE SalaryRecords SET IsPaid = @IsPaid WHERE SalaryID = @SalaryID";
             using var updateCmd = new MySqlCommand(updateQuery, connection);
             updateCmd.Parameters.AddWithValue("@IsPaid", true);
