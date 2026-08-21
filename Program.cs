@@ -12,15 +12,15 @@ public class Program
             ClearScreenIfPossible();
             Console.WriteLine("╔══════════════════════════════════════════╗");
             Console.WriteLine("║                                          ║");
-            Console.WriteLine("║       💼 PAYROLL MANAGEMENT SYSTEM       ║");
+            Console.WriteLine("║          PAYROLL MANAGEMENT SYSTEM       ║");
             Console.WriteLine("║                                          ║");
             Console.WriteLine("╠══════════════════════════════════════════╣");
             Console.WriteLine("║              MAIN MENU                   ║");
             Console.WriteLine("╠══════════════════════════════════════════╣");
             Console.WriteLine("║                                          ║");
-            Console.WriteLine("║   [1] 👤 Employee Management             ║");
-            Console.WriteLine("║   [2] 💰 Payroll Management              ║");
-            Console.WriteLine("║   [3] 🚪 Exit                            ║");
+            Console.WriteLine("║   [1]    Employee Management             ║");
+            Console.WriteLine("║   [2]    Payroll Management              ║");
+            Console.WriteLine("║   [3]    Exit                            ║");
             Console.WriteLine("║                                          ║");
             Console.WriteLine("╚══════════════════════════════════════════╝");
 
