@@ -1,10 +1,12 @@
 public class Employee
 {
+    // Private fields protect employee details
     private string employeeId = string.Empty;
     private string name = string.Empty;
     private string department = string.Empty;
     private decimal basicSalary;
 
+    // Default constructor initializes empty values
     public Employee()
     {
         employeeId = string.Empty;
@@ -13,6 +15,7 @@ public class Employee
         basicSalary = 0;
     }
 
+    // Parameterized constructor sets all properties
     public Employee(string employeeId, string name, string department, decimal basicSalary)
     {
         EmployeeId = employeeId;
@@ -21,6 +24,7 @@ public class Employee
         BasicSalary = basicSalary;
     }
 
+    // Validates employee ID before assignment
     public string EmployeeId
     {
         get => employeeId;
@@ -28,13 +32,14 @@ public class Employee
         {
             if (string.IsNullOrWhiteSpace(value))
             {
-                throw new ArgumentException("Employee ID cannot be empty.");
+               throw new ArgumentException("Employee ID cannot be empty.");
             }
 
             employeeId = value.Trim();
         }
     }
 
+    // Validates employee name before assignment
     public string Name
     {
         get => name;
@@ -42,13 +47,14 @@ public class Employee
         {
             if (string.IsNullOrWhiteSpace(value))
             {
-                throw new ArgumentException("Employee name cannot be empty.");
+               throw new ArgumentException("Employee name cannot be empty.");
             }
 
             name = value.Trim();
         }
     }
 
+    // Validates department name before assignment
     public string Department
     {
         get => department;
@@ -56,13 +62,14 @@ public class Employee
         {
             if (string.IsNullOrWhiteSpace(value))
             {
-                throw new ArgumentException("Department cannot be empty.");
+               throw new ArgumentException("Department cannot be empty.");
             }
 
             department = value.Trim();
         }
     }
 
+    // Prevents negative basic salary values
     public decimal BasicSalary
     {
         get => basicSalary;
@@ -70,13 +77,14 @@ public class Employee
         {
             if (value < 0)
             {
-                throw new ArgumentOutOfRangeException(nameof(value), "❌ Basic salary cannot be negative.");
+               throw new ArgumentOutOfRangeException(nameof(value), "❌ Basic salary cannot be negative.");
             }
 
             basicSalary = value;
         }
     }
 
+    // Formats employee details for display
     public override string ToString()
     {
         return $"Employee ID: {EmployeeId}\n" +
