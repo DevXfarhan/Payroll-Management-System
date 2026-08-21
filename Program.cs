@@ -2,7 +2,7 @@ using System.Globalization;
 
 public class Program
 {
-    
+
     public static void Main()
     {
         Payroll payroll = new Payroll();
@@ -10,14 +10,23 @@ public class Program
         while (true)
         {
             ClearScreenIfPossible();
-            Console.WriteLine("=====================================");
-            Console.WriteLine("PAYROLL MANAGEMENT SYSTEM");
-            Console.WriteLine("=====================================");
-            Console.WriteLine("1. Employee Management");
-            Console.WriteLine("2. Payroll Management");
-            Console.WriteLine("3. Exit");
+            Console.WriteLine("╔══════════════════════════════════════════╗");
+            Console.WriteLine("║                                          ║");
+            Console.WriteLine("║       💼 PAYROLL MANAGEMENT SYSTEM       ║");
+            Console.WriteLine("║                                          ║");
+            Console.WriteLine("╠══════════════════════════════════════════╣");
+            Console.WriteLine("║              MAIN MENU                   ║");
+            Console.WriteLine("╠══════════════════════════════════════════╣");
+            Console.WriteLine("║                                          ║");
+            Console.WriteLine("║   [1] 👤 Employee Management             ║");
+            Console.WriteLine("║   [2] 💰 Payroll Management              ║");
+            Console.WriteLine("║   [3] 🚪 Exit                            ║");
+            Console.WriteLine("║                                          ║");
+            Console.WriteLine("╚══════════════════════════════════════════╝");
 
-            string choice = ReadRequiredInput("Select an option: ");
+
+
+            string choice = ReadRequiredInput("➜ Select an option: ");
 
             switch (choice)
             {
